@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="9.css" />
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="Logo" />
+      <div class="background">
+        <h1>NGÀY HỘI CÔNG NGHỆ THÔNG TIN 2026</h1>
+        <p>Kết nối và sáng tạo</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Diễn đàn</a></li>
+          <li><a href="#">Sự kiện</a></li>
+          <li><a href="#">Liên hệ</a></li>
+          <li><a href="#">Mục đăng mới</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <aside>
+        <ul>
+          <li onclick="chonmenu('Trang chủ')">Trang chủ</li>
+          <li onclick="chonmenu('Giới thiệu')">Giới thiệu</li>
+          <li onclick="chonmenu('Diễn đàn')">Diễn đàn</li>
+          <li onclick="chonmenu('Sự kiện')">Sự kiện</li>
+          <li onclick="chonmenu('Liên hệ')">Liên hệ</li>
+        </ul>
+        <div class="bos">
+          <strong>Mục đang chọn:</strong>
+          <p id="mucchon">Chưa chọn</p>
+        </div>
+      </aside>
+      <section class="menu">
+        <section class="content">
+          <div class="content">
+            <img src="CNTT1.png" alt="Discussion Forum" />
+            <h2>Diễn đàn thảo luận</h2>
+            <p>
+              Chào mừng bạn đến với diễn đàn thảo luận của Ngày Hội Công Nghệ
+              Thông Tin 2026! Đây là nơi để bạn chia sẻ ý kiến, hỏi đáp và kết
+              nối với cộng đồng yêu công nghệ thông tin. Hãy tham gia vào các
+              chủ đề thảo luận, chia sẻ kinh nghiệm và học hỏi từ những người
+              khác. Chúng tôi khuyến khích sự tôn trọng và hợp tác trong mọi
+              cuộc trò chuyện. Hãy cùng nhau xây dựng một cộng đồng mạnh mẽ và
+              sáng tạo!
+            </p>
+            <button onclick="xemchitiet('Diễn đàn')">Tìm hiểu ngay</button>
+          </div>
+        </section>
+        <h2>Chủ đề thảo luận nổi bật</h2>
+        <section class="ND">
+          <div class="ND1">
+            <img src="CNTT2.png" alt="Topic 1" />
+            <h3>Chủ đề 1</h3>
+            <p>Mô tả ngắn gọn về chủ đề thảo luận này.</p>
+            <p class="points">Điểm thưởng: 100 điểm</p>
+            <button onclick="xemchitiet('Chủ đề 1')">Chi tiết</button>
+          </div>
+          <div class="ND1">
+            <img src="CNTT3.png" alt="Topic 2" />
+            <h3>Chủ đề 2</h3>
+            <p>Mô tả ngắn gọn về chủ đề thảo luận này.</p>
+            <p class="points">Điểm thưởng: 80 điểm</p>
+            <button onclick="xemchitiet('Chủ đề 2')">Chi tiết</button>
+          </div>
+          <div class="ND1">
+            <img src="CNTT4.png" alt="Topic 3" />
+            <h3>Chủ đề 3</h3>
+            <p>Mô tả ngắn gọn về chủ đề thảo luận này.</p>
+            <p class="points">Điểm thưởng: 60 điểm</p>
+            <button onclick="xemchitiet('Chủ đề 3')">Chi tiết</button>
+          </div>
+        </section>
+        <section class="PC">
+          <h2>Hoạt động đã chọn</h2>
+          <p id="HĐ">Chưa chọn hoạt động nào.</p>
+          <p id="Điểm">Điểm thưởng: 0</p>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <div class="box">
+        <p>&copy; 2026 Ngày Hội Công Nghệ Thông Tin. All rights reserved.</p>
+        <p>Liên hệ: info@ngayhoidientu.vn</p>
+      </div>
+      <div class="box">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+      <div class="box">
+        <p>Địa chỉ: 123 Đường Công Nghệ, Thành phố Công Nghệ, Việt Nam</p>
+        <p id="ThoiGian"></p>
+      </div>
+    </footer>
+    <script src="9.js"></script>
+  </body>
+</html>
